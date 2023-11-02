@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+estate.access_estate_property_user,estate.access_estate_property_user,estate.model_estate_property,real_estate_user,1,1,1,0
+estate.access_estate_property_manager,estate.access_estate_property_manager,estate.model_estate_property,real_estate_manager,1,1,1,1
+
+estate.access_estate_property_type_user,estate.access_estate_property_type_user,estate.model_estate_property_type,real_estate_user,1,1,1,0
+estate.access_estate_property_tag_user,estate.access_estate_property_tag_user,estate.model_estate_property_tag,real_estate_user,1,1,1,0
+
+
+
+

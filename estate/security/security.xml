@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="real_estate_category" model="ir.module.category">
+        <field name="name">Real Estate</field>
+    </record>
+    <record id="real_estate_user" model="res.groups">
+        <field name="name">Real Estate User</field>
+        <field name="category_id" ref="estate.real_estate_category"/>
+    </record>
+    <record id="real_estate_manager" model="res.groups">
+        <field name="name">Real Estate Manager</field>
+        <field name="category_id" ref="estate.real_estate_category"/>
+        <field name="implied_ids" eval="[(4, ref('real_estate_user'))]"/>
+    </record>
+</odoo>

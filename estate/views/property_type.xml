@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!--form view-->
+    <record id="view_property_type_form" model="ir.ui.view">
+        <field name="name">estate.property.type.form</field>
+        <field name="model">estate.property.type</field>
+        <field name="arch" type="xml">
+
+            <form string="Property Type Form">
+
+                <div class="oe_button_box" name="button_box">
+                    <button name="action_open_offers" type="object" class="oe_stat_button" icon="fa-star">
+                        <span class="o_stat_text">Offer</span>
+                    </button>
+                </div>
+
+                <sheet>
+
+<!--this is an inline view taking values from the property_ids which is One2many field linked with the estate.property -->
+                    <group>
+                        <field name="property_ids">
+                            <tree>
+                                <field name="name"/>
+                                <field name="expected_price"/>
+                                <field name="state"/>
+                            </tree>
+                        </field>
+                    </group>
+
+                </sheet>
+            </form>
+
+        </field>
+    </record>
+
+    <!--tree view-->
+    <record id="view_property_type_tree" model="ir.ui.view">
+        <field name="name">estate.property.type.tree</field>
+        <field name="model">estate.property.type</field>
+        <field name="arch" type="xml">
+            <tree string='Property Type'>
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="offer_ids"/>
+            </tree>
+        </field>
+    </record>
+
+    <!--this is the action part which is triggered upon clicking a menu, a button in views -->
+
+    <record id="property_type_action" model="ir.actions.act_window">
+        <field name="name">Property Type</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">estate.property.type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <menuitem
+            id="property_type_menu"
+            name="Property type"
+            parent='settings_menu'
+            action="property_type_action"
+            sequence="10"/>
+
+</odoo>

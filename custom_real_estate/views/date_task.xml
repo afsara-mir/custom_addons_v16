@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_date_task_form" model="ir.ui.view">
+        <field name="name">date.task.form</field>
+        <field name="model">date.task</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="pay_cycle"/>
+                        <field name="date_lists"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_date_task_tree" model="ir.ui.view">
+        <field name="name">date.task.tree</field>
+        <field name="model">date.task</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="pay_cycle"/>
+                <field name="date_lists"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_date_task" model="ir.actions.act_window">
+        <field name="name">Date Task</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">date.task</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="date_task_menu"
+              name="Date Range"
+              parent="settings_menu"
+              action="action_date_task"
+              sequence="25"/>
+</odoo>

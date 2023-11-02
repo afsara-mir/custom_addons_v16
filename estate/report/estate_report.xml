@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="report_real_estate">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <h2>Property Report</h2>
+                            <div>
+                                <strong>Property Name:</strong>
+                                <span>
+                                    <t t-esc="o.name"/>
+                                </span>
+                                <br/>
+                                <strong>Property type:</strong>
+                                <span>
+                                    <t t-esc="o.property_type_id"/>
+                                </span>
+                                <br/>
+                                <strong>Postcode:</strong>
+                                <span>
+                                    <t t-esc="o.postcode"/>
+                                </span>
+                                <br/>
+                                <strong>Expected Price:</strong>
+                                <span>
+                                    <t t-esc="o.expected_price"/>
+                                </span>
+                                <br/>
+                                <strong>Selling Price:</strong>
+                                <span>
+                                    <t t-esc="o.selling_price"/>
+                                </span>
+                                <br/> <br/>
+                                <strong>Description</strong>
+                                <br/>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col1">Bedrooms</th>
+                                            <th scope="col1">Living Area</th>
+                                            <th scope="col1">Total Area</th>
+                                            <th scope="col1">Facades</th>
+                                            <th scope="col1">Garden Area</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <span t-esc="o.bedrooms"/>
+                                            </td>
+                                            <td>
+                                                <span t-esc="o.living_area"/>
+                                            </td>
+                                            <td>
+                                                <span t-esc="o.total_area"/>
+                                            </td>
+                                             <td>
+                                                <span t-esc="o.facades"/>
+                                            </td>
+                                             <td>
+                                                <span t-esc="o.garden_area"/>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+
+    </data>
+</odoo>
+
+

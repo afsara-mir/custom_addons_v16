@@ -1,0 +1,30 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<odoo>-->
+<!--    <record id="view_date_range_form" model="ir.ui.view">-->
+<!--        <field name="name">date.range.form</field>-->
+<!--        <field name="model">date.range</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <form>-->
+<!--                <sheet>-->
+<!--                    <group>-->
+<!--&lt;!&ndash;                        <field name="pay_cycle"/>&ndash;&gt;-->
+<!--                        <field name="start_date"/>-->
+<!--                        <field name="end_date"/>-->
+<!--                    </group>-->
+<!--                </sheet>-->
+<!--            </form>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    <record id="view_date_range_tree" model="ir.ui.view">-->
+<!--        <field name="name">date.range.tree</field>-->
+<!--        <field name="model">date.range</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <tree editable="top">-->
+<!--&lt;!&ndash;                <field name="pay_cycle"/>&ndash;&gt;-->
+<!--                <field name="start_date"/>-->
+<!--                <field name="end_date"/>-->
+<!--            </tree>-->
+<!--        </field>-->
+<!--    </record>-->
+<!--</odoo>-->

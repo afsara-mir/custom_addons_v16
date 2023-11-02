@@ -1,0 +1,28 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<odoo>-->
+<!--    <record id="view_range_form" model="ir.ui.view">-->
+<!--        <field name="name">real_estate.range.form</field>-->
+<!--        <field name="model">real_estate.range</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <form>-->
+<!--                <sheet>-->
+<!--                    <group>-->
+<!--                        <field name="start_date"/>-->
+<!--                        <field name="end_date"/>-->
+<!--                    </group>-->
+<!--                </sheet>-->
+<!--            </form>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    <record id="view_range_tree" model="ir.ui.view">-->
+<!--        <field name="name">real_estate.range.tree</field>-->
+<!--        <field name="model">real_estate.range</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <tree editable="top">-->
+<!--                <field name="start_date"/>-->
+<!--                <field name="end_date"/>-->
+<!--            </tree>-->
+<!--        </field>-->
+<!--    </record>-->
+<!--</odoo>-->

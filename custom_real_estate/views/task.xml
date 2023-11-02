@@ -1,0 +1,41 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<odoo>-->
+<!--    <record id="view_task_form" model="ir.ui.view">-->
+<!--        <field name="name">real_estate.task.form</field>-->
+<!--        <field name="model">real_estate.task</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <form>-->
+<!--                <sheet>-->
+<!--                    <group>-->
+<!--                        <field name="pay_cycle"/>-->
+<!--                        <field name="range_ids"/>-->
+<!--                    </group>-->
+<!--                </sheet>-->
+<!--            </form>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    <record id="view_task_tree" model="ir.ui.view">-->
+<!--        <field name="name">real_estate.task.tree</field>-->
+<!--        <field name="model">real_estate.task</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <tree>-->
+<!--                <field name="pay_cycle"/>-->
+<!--                <field name="range_ids"/>-->
+<!--            </tree>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    <record id="action_task" model="ir.actions.act_window">-->
+<!--        <field name="name">Task</field>-->
+<!--        <field name="type">ir.actions.act_window</field>-->
+<!--        <field name="res_model">real_estate.task</field>-->
+<!--        <field name="view_mode">tree,form</field>-->
+<!--    </record>-->
+
+<!--    <menuitem id="task_menu"-->
+<!--              name="Task"-->
+<!--              parent="settings_menu"-->
+<!--              action="action_task"-->
+<!--              sequence="22"/>-->
+<!--</odoo>-->

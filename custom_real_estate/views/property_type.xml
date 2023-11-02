@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_property_type_form" model="ir.ui.view">
+        <field name="name">real_estate.property_type.form</field>
+        <field name="model">real_estate.property_type</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_open_offers" type="object" class="oe_stat_button" icon="fa-star">
+                            <span class="o_stat_text">Offer(s)</span>
+                        </button>
+                    </div>
+
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <notebook>
+                        <page name="properties" string="Properties">
+                            <field name="models_inline_id">
+                                <tree editable="top">
+                                    <field name="name"/>
+                                    <field name="expected_price"/>
+                                    <field name="selling_price"/>
+                                    <field name="status"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_property_type_tree" model="ir.ui.view">
+        <field name="name">real_estate.property_type.tree</field>
+        <field name="model">real_estate.property_type</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_property_types" model="ir.actions.act_window">
+        <field name="name">Property Types</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">real_estate.property_type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="property_type_menu"
+              name="Property Types"
+              parent="settings_menu"
+              action="action_property_types"
+              sequence="12"/>
+
+</odoo>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="report_offer">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <h2>Property Report</h2>
+                            <div>
+                                <strong>Customer Name:</strong>
+                                <span>
+                                    <t t-esc="o.offer_partner_id"/>
+                                </span>
+                                <br/>
+                                <strong>Price:</strong>
+                                <span>
+                                    <t t-esc="o.price"/>
+                                </span>
+                                <br/>
+                                <strong>Property Name:</strong>
+                                <span>
+                                    <t t-esc="o.property_id"/>
+                                </span>
+                                <br/>
+                                <strong>Deadline:</strong>
+                                <span>
+                                    <t t-esc="o.date_deadline"/>
+                                </span>
+                                <br/>
+                                <strong>Status:</strong>
+                                <span>
+                                    <t t-esc="o.status"/>
+                                </span>
+                                <br/> <br/>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>
+
+
